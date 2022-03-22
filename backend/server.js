@@ -20,12 +20,12 @@ app.use(express.static(__dirname + '../../public'));
 // require("./server/routes/nodeMailerRoutes")(app)
 require("./serverFiles/routes/htmlroutes")(app)
 
-// mongoose
-//   .connect(process.env.MONGODB_URI || "mongodb://localhost/griffinsurettDb", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => console.log("Connected To Database!!"))
-//   .catch((err) => console.log("error:" + err));
+mongoose
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/griffinsurettDb", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected To Database!!"))
+  .catch((err) => console.log("error:" + err));
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))

@@ -1,3 +1,27 @@
+ @media screen and (min-width: 1000px) {
+    .portfolio-box {
+        padding: 2pc 10pc;
+  }
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
+    .portfolio-box {
+        padding: 2pc 5pc;
+  }
+ }
+
+ @media screen and (min-width: 400px) and (max-width: 700px) {
+    .portfolio-box {
+        padding: 2pc 2pc;
+  }
+ }
+
+ @media screen and (max-width: 400px) {
+    .portfolio-box {
+        padding: 2pc 1pc;
+  }
+ }
+
 .portfolio-section {
     /* display: flex;
     justify-content: center;
@@ -10,7 +34,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 4pc 16pc;
 }
 
 .portfolio-box p {

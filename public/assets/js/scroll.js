@@ -20,7 +20,7 @@ const scrollDownToColors = () => {
 
 const scrollDownToBlack = () => {
     hero.classList.remove('swirlOutFwd');
-    setTimeout(scrollPortfolio, 550);
-    colorsSec.classList.add('swingOutTopBck')
+    colorsSec.classList.add('slideOutEllipticTopFwd')
+    setTimeout(scrollPortfolio, 40);
     servicesSec.classList.add('swingInTopFwd')
 } 

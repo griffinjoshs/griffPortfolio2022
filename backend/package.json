@@ -4,5 +4,25 @@
     "express": "^4.17.3",
     "mongoose": "^6.2.4",
     "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "16.4.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ttcourse-initial-form",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/griffinjoshs/griffPortfolio2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/griffinjoshs/griffPortfolio2022.git/issues"
   }
 }

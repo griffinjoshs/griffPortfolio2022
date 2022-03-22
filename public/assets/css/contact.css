@@ -1,0 +1,85 @@
+/* Contact Page */
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+ 
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+ 
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .input {
+    background: var(--background);
+    border: none;
+    width: 50%;
+    border-bottom: solid var(--primaryColor) 5px;
+    padding: 3px 12px 6px 12px;
+    margin: 10px 2px 30px 2px;
+    color: var(--textColor);
+    outline: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .input:focus {
+    width: 100%;
+    transition: width 4s;
+    color: var(--primaryColor);
+  }
+  
+  .input::placeholder {
+    color: var(--textColor);
+  }
+  
+  .input:not(:placeholder-shown) {
+    width: 100%;
+    color: var(--primaryColor);
+  }
+  
+  .input:focus::placeholder {
+    color: var(--primaryColor);
+    font-weight: bold;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--background) inset !important;
+    -webkit-text-fill-color: var(--primaryColor);
+  }
+  
+  .input textarea {
+    height: 20px;
+  }
+  
+  #submit-form {
+    background: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    height: 3pc;
+    width: 35%;
+    /* margin: 0 auto; */
+  }

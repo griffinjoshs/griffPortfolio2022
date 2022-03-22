@@ -1,0 +1,143 @@
+/* navbar */
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 0 25px 0 25px;
+  }
+
+  /* navbar */
+  #menu {
+    padding: 4pc 8pc 4pc 8pc;
+  }
+
+  #menu li {
+    font-size: 5pc;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  nav {
+    padding: 0 20px 0 20px;
+  }
+
+  #menu li {
+    font-size: 3pc;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 500px) {
+  #menu a {
+    padding: 0 5pc 0 5pc;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0 15px 0 15px;
+  }
+
+  #menu li {
+    font-size: 2pc;
+    padding: 3px 0 3px 0;
+  }
+
+  #menu a {
+    padding: 0 2pc 0 2pc;
+  }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav #navbar {
+    background-color: transparent;
+    z-index: -10;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  #nav-icon {
+    font-size: 40px;
+  }
+
+  .name-logo h2 {
+    color: #21aad8;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+  
+  .navbar-left {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    cursor: pointer;
+    /* width: 50%; */
+  }
+  
+  .navbar-left h2 {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+  
+  .navbar-right {
+    justify-self: right;
+  }
+  
+  .navbar-right button {
+    background: none;
+    border: none;
+  }
+  
+  .icon ion-icon {
+    cursor: pointer;
+    color: var(--textColor);
+    width: 4pc;
+    height: 4pc;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    position: sticky;
+    top: 0;
+  }
+  
+  .icon ion-icon:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    color: var(--secondaryColor);
+  }
+
+  /* navbar menu */
+#menu {
+    overflow: hidden;
+}
+
+#menu li {
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--textColor);
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  #menu li:hover {
+    background: var(--primaryColor);
+    animation: colorSlide 5s;
+    cursor: pointer;
+  }

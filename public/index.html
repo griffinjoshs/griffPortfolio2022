@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Griffin Surett</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/animation.css" />
+  <link rel="stylesheet" href="./assets/css/shapes.css" />
+  <link rel="stylesheet" href="./assets/css/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/hero.css" />
+  <link rel="stylesheet" href="./assets/css/colorSec.css" />
+  <link rel="stylesheet" href="./assets/css/blackArea.css" />
+  <link rel="stylesheet" href="./assets/css/portfolio.css" />
+  <link rel="stylesheet" href="./assets/css/card.css" />
+</head>
+
+<body>
+  <!-- <div id="wholeWebsite"> -->
+    <nav id="navbar"></nav>
+    <div id="menu" class="hide"></div>
+    <div class="big-shape-logo">
+      <div class="big-shape-circle">
+        <div class="big-shape-square">
+          <div class="big-shape-diamond"></div>
+        </div>
+      </div>
+    </div>
+    <div id="underNav">
+      <!-- menupage -->
+      <!-- navbar -->
+      <div class="shapes"></div>
+      <!-- <div id="animation"></div> -->
+      <!-- start hero -->
+      <section class="hero-section" onscroll="scrollDownToColors()">
+        <img src='./assets/media/images/blob-lightblue.png' class="blob header-blob lightBlue" id="header-lightblue" height="300" width="300">
+        <img src='./assets/media/images/blob-blue.png' class="blob header-blob blue" id="header-blue1" height="250" width="250">
+        <img src='./assets/media/images/blob-blue.png' class="blob header-blob pink" id="header-blue2" height="250" width="250">
+        <header class="hero-left" id="header"></header>
+        <!-- <div class="hero-right"></div> -->
+          <button class="scroll-btn" id="scrollDownToColors" onclick="scrollDownToColors()">Scroll</button>
+      </section>
+      <section class="color-section" id="colors">
+        <div class="color-content">
+          <h2 class="section-header">What My Customers Are Saying</h2>
+          <div class="testimonial-section"></div>
+          <button class="scroll-btn" id='scrollDownToBlack' onclick="scrollDownToBlack()">Scroll</button>
+        </div>
+      </section>
+      <section class="services-section" id="services"> 
+        <h2 class="section-header">My Services</h2>
+        <img src='./assets/media/images/blob-lightblue.png' class="blob services-blob" id="services-lightblue" height="300" width="300">
+        <img src='./assets/media/images/blob-blue.png' class="blob services-blob" id="services-blue" height="250" width="250">
+        <div class="card-container" id="section"></div> 
+        </section>
+        <section class="portfolio-section">
+          <h2 class="section-header">My Projects</h2>
+        <div class="portfolio-box" onmouseover='slideArrow()'><br>
+          <div class="portfolio-left">
+            <h3>Icon</h3>
+          </div>
+            <div class="portfolio-right">
+              <h2>Project</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perferendis provident recusandae molestiae cupiditate sint, temporibus labore veritatis repudiandae tenetur repellendus voluptate quis dolore expedita quaerat eaque natus similique suscipit.</p>
+        </div>
+      </div>
+        </section>
+        <footer>
+          <div class="footer-line"></div>
+          <h2>© 2022 Griffins Web Services.</h2>
+        </footer>
+   <!-- end hero -->
+</div>
+<!-- </div> -->
+    <!-- Creative Designed By 30000001537 From <a href="https://lovepik.com/image-400682323/liquid-fluid-background.html">LovePik.com</a> -->
+</body>
+<script src="./assets/js/hero.js"></script>
+<script src="./assets/js/scroll.js"></script>
+<script src="./assets/js/card.js"></script>
+<script src="./assets/js/navbar.js"></script>
+<!-- <script src="./assets/js/animation.js"></script> -->
+<script src="./assets/js/portfolio.js"></script>
+<script src="./assets/js/testimonials.js"></script>
+</html>

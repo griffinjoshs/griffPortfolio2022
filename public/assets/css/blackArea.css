@@ -1,0 +1,24 @@
+  /* @media screen and (min-width: 900px) {
+    .services-section {
+      height: 40;
+    }
+  } */
+  
+  @media screen and (max-width: 500px) {
+
+  }
+
+/* services section */
+.services-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 5pc 0 5pc 0;
+  }
+  
+  /* portfolio section */
+  .portfolio-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }

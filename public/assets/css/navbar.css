@@ -15,7 +15,6 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 1200px) {
@@ -29,11 +28,9 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 1200px) {
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
-
 }
 
 @media screen and (min-width: 500px) {
@@ -58,86 +55,94 @@
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav #navbar {
-    background-color: transparent;
-    z-index: -10;
-  }
-  
-  nav a {
-    text-decoration: none;
-  }
-  
-  #nav-icon {
-    font-size: 40px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .name-logo h2 {
-    color: #21aad8;
-    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
-  
-  .navbar-left {
-    font-family: "Pacifico", cursive;
-    font-size: 30px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 1;
-    cursor: pointer;
-    /* width: 50%; */
-  }
-  
-  .navbar-left h2 {
-    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
-  
-  .navbar-right {
-    justify-self: right;
-  }
-  
-  .navbar-right button {
-    background: none;
-    border: none;
-  }
-  
-  .icon ion-icon {
-    cursor: pointer;
-    color: var(--textColor);
-    width: 4pc;
-    height: 4pc;
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    position: sticky;
-    top: 0;
-  }
-  
-  .icon ion-icon:hover {
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
-    color: var(--secondaryColor);
-  }
+nav #navbar {
+  background-color: transparent;
+  /* z-index: -10; */
+}
 
-  /* navbar menu */
+nav a {
+  text-decoration: none;
+}
+
+#nav-icon {
+  font-size: 40px;
+}
+
+.name-logo h2 {
+  /* color: #dfe4ff; */
+  color: #ffffff;
+  /* text-shadow: 20px -11px 21px #5e76f6, 20px 12px 10px #5e76f6, 20px -5px 10px #5e76f6, 1px 10px 10px #5e76f6, -18px 11px 10px #5e76f6, -17px -9px 10px #5e76f6, -1px -9px 10px #5e76f6, 17px -12px 11px #5e76f6, -22px 9px 10px #5e76f6, 10px -20px 10px #5e76f6, -17px -17px 10px #5e76f6, -30px 3px 10px #5e76f6, -29px -10px 10px #5e76f6, -30px 12px 10px #5e76f6; */
+}
+
+.shape-logo {
+  z-index: 10;
+  filter: drop-shadow(1px -2px 30px #5e76f6);
+}
+
+.navbar-left {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  cursor: pointer;
+  /* width: 50%; */
+  text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  filter: drop-shadow(55px -2px 30px #5e76f6);
+}
+
+.navbar-left h2 {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.navbar-right {
+  justify-self: right;
+}
+
+.navbar-right button {
+  background: none;
+  border: none;
+}
+
+.icon ion-icon {
+  cursor: pointer;
+  color: var(--textColor);
+  width: 4pc;
+  height: 4pc;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: sticky;
+  top: 0;
+}
+
+.icon ion-icon:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+  color: var(--secondaryColor);
+}
+
+/* navbar menu */
 #menu {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #menu li {
-    list-style: none;
-    text-align: left;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--textColor);
-    width: 100vw;
-    overflow: hidden;
-  }
-  
-  #menu li:hover {
-    background: var(--primaryColor);
-    animation: colorSlide 5s;
-    cursor: pointer;
-  }
+  list-style: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--textColor);
+  width: 100vw;
+  overflow: hidden;
+}
+
+#menu li:hover {
+  background: var(--primaryColor);
+  animation: colorSlide 5s;
+  cursor: pointer;
+}

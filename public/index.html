@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/737cd2d755.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Griffin Surett</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/shapes.css" />
+    <link rel="stylesheet" href="./assets/css/scroll.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/colorSec.css" />
+    <link rel="stylesheet" href="./assets/css/blackArea.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link rel="stylesheet" href="./assets/css/homeCard.css" />
+    <link rel="stylesheet" href="./assets/css/socialicons.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Griffin Surett</title>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/css/animation.css" />
-  <link rel="stylesheet" href="./assets/css/shapes.css" />
-  <link rel="stylesheet" href="./assets/css/navbar.css" />
-  <link rel="stylesheet" href="./assets/css/hero.css" />
-  <link rel="stylesheet" href="./assets/css/colorSec.css" />
-  <link rel="stylesheet" href="./assets/css/blackArea.css" />
-  <link rel="stylesheet" href="./assets/css/portfolio.css" />
-  <link rel="stylesheet" href="./assets/css/homeCard.css" />
-</head>
-
-<body>
-  <!-- <div id="wholeWebsite"> -->
+  <body>
+    <!-- <div id="wholeWebsite"> -->
     <nav id="navbar"></nav>
     <div id="menu" class="hide"></div>
     <div class="big-shape-logo">
@@ -35,53 +44,83 @@
       <div class="shapes"></div>
       <!-- <div id="animation"></div> -->
       <!-- start hero -->
-      <section class="hero-section" onscroll="scrollDownToColors()">
-        <img src='./assets/media/images/blob-lightblue.png' class="blob header-blob lightBlue" id="header-lightblue" height="300" width="300">
-        <img src='./assets/media/images/blob-blue.png' class="blob header-blob blue" id="header-blue1" height="250" width="250">
-        <img src='./assets/media/images/blob-blue.png' class="blob header-blob pink" id="header-blue2" height="250" width="250">
-        <header class="hero-left" id="header"></header>
-        <!-- <div class="hero-right"></div> -->
-          <button class="scroll-btn" id="scrollDownToColors" onclick="scrollDownToColors()">Scroll</button>
+      <section class="hero-section" onscroll="scrollDownToAbout()">
+        <!-- <img src='./assets/media/images/blob-gradientblue.png' class="blob header-blob lightBlue" id="header-lightblue" height="300" width="300"> -->
+        <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob header-blob blue" id="header-blue1" height="250" width="250"> -->
+        <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob header-blob pink" id="header-blue2" height="250" width="250"> -->
+        <div class="hero-left" id="header"></div>
+        <div class="hero-right">
+          <img
+            src="./assets/media/images/griffin.png"
+            height="900"
+            width="500"
+          />
+        </div>
+        <button
+          class="scroll-btn"
+          id="scrollDownToAbout"
+          onclick="scrollDownToAbout()"
+        >
+          Scroll
+        </button>
+      </section>
+      <section class="about-section" id="about">
+        <h2 class="section-header">About Me</h2>
+        <div class="about-content">
+          <div class="about-left">
+            <div class="outer-img">
+              <div class="bg-image"></div>
+            </div>
+          </div>
+          <div class="about-right">
+            <h3>My Story</h3>
+            <p>My name is Griffin, as a child of the digital age I am very sound in all things online. I am a 22 year old college student from New Jersey that specializes in Web Development as well as digital marketing. I have over 3 years of building web sites and running various different digital campaigns. However, things took a big turn when I learned how to code over the course of the long and drawn out Covid period. I am now well versed in HTML, CSS, and JavaScript as well as different libraries and frameworks.</p>
+          <br>
+          <button>Hire Me</button>
+          <br>
+            <div class="social-icons" id="socialIcons"></div>
+          </div>
+        </div>
+        <button
+          class="scroll-btn"
+          id="scrollDownToBlack"
+          onclick="scrollDownToBlack()"
+        >
+          Scroll
+        </button>
+      </section>
+      <section class="services-section" id="services">
+        <h2 class="section-header">My Services</h2>
+        <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob services-blob" id="services-lightblue" height="300" width="300"> -->
+        <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob services-blob" id="services-blue" height="250" width="250"> -->
+        <div class="card-container" id="section"></div>
+      </section>
+      <section class="portfolio-section">
+        <h2 class="section-header">My Projects</h2>
+        <div class="portfolio-boxes" onmouseover="slideArrow()">
+          </div>
       </section>
       <section class="color-section" id="colors">
         <div class="color-content">
           <h2 class="section-header">What My Customers Are Saying</h2>
           <div class="testimonial-section"></div>
-          <button class="scroll-btn" id='scrollDownToBlack' onclick="scrollDownToBlack()">Scroll</button>
         </div>
       </section>
-      <section class="services-section" id="services"> 
-        <h2 class="section-header">My Services</h2>
-        <img src='./assets/media/images/blob-lightblue.png' class="blob services-blob" id="services-lightblue" height="300" width="300">
-        <img src='./assets/media/images/blob-blue.png' class="blob services-blob" id="services-blue" height="250" width="250">
-        <div class="card-container" id="section"></div> 
-        </section>
-        <section class="portfolio-section">
-          <h2 class="section-header">My Projects</h2>
-        <div class="portfolio-box" onmouseover='slideArrow()'><br>
-          <div class="portfolio-left">
-            <h3>Icon</h3>
-          </div>
-            <div class="portfolio-right">
-              <h2>Project</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perferendis provident recusandae molestiae cupiditate sint, temporibus labore veritatis repudiandae tenetur repellendus voluptate quis dolore expedita quaerat eaque natus similique suscipit.</p>
-        </div>
-      </div>
-        </section>
-        <footer>
-          <div class="footer-line"></div>
-          <h2>© 2022 Griffins Web Services.</h2>
-        </footer>
-   <!-- end hero -->
-</div>
-<!-- </div> -->
+      <footer>
+        <div class="footer-line"></div>
+        <h2>© 2022 Griffins Web Services.</h2>
+      </footer>
+      <!-- end hero -->
+    </div>
+    <!-- </div> -->
     <!-- Creative Designed By 30000001537 From <a href="https://lovepik.com/image-400682323/liquid-fluid-background.html">LovePik.com</a> -->
-</body>
-<script src="./assets/js/hero.js"></script>
-<script src="./assets/js/scroll.js"></script>
-<script src="./assets/js/homeCard.js"></script>
-<script src="./assets/js/navbar.js"></script>
-<!-- <script src="./assets/js/animation.js"></script> -->
-<script src="./assets/js/portfolio.js"></script>
-<script src="./assets/js/testimonials.js"></script>
+  </body>
+  <script src="./assets/js/hero.js"></script>
+  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/homeCard.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/socialicons.js"></script>
+  <script src="./assets/js/portfolio.js"></script>
+  <script src="./assets/js/testimonials.js"></script>
 </html>

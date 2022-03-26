@@ -42,9 +42,12 @@
     margin: 10px 2px 30px 2px;
     color: var(--textColor);
     outline: none;
+    background: transparent;
     font-size: 40px;
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6);
   }
   
   .input:focus {
@@ -63,7 +66,7 @@
   }
   
   .input:focus::placeholder {
-    color: var(--primaryColor);
+    /* color: var(--primaryColor); */
     font-weight: bold;
   }
   

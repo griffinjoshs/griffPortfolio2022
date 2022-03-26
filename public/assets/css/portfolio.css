@@ -1,58 +1,103 @@
- @media screen and (min-width: 1000px) {
+ @media screen and (min-width: 700px) {
+    .portfolio-section {
+        padding: 4pc;
+        min-height: 130vh;
+    }
+
     .portfolio-box {
-        padding: 2pc 10pc;
+        padding: 0 1pc;
+        margin: 4pc;
   }
+
+  .portfolio-box h2 {
+    font-size: 6pc;
+}
+
+  .portfolio-box h3 {
+    font-size: 2pc;
+    padding: 0;
+}
+
+.portfolio-box p {
+    font-size: 1pc;
+}
+
+.portfolio-box button {
+    font-size: 20px;
+}
  }
 
  @media screen and (min-width: 700px) and (max-width: 1000px) {
-    .portfolio-box {
-        padding: 2pc 5pc;
-  }
+
  }
 
  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .portfolio-box {
-        padding: 2pc 2pc;
-  }
  }
 
- @media screen and (max-width: 400px) {
-    .portfolio-box {
-        padding: 2pc 1pc;
-  }
- }
+ @media screen and (max-width: 700px) {
+    /* .portfolio-section {
+        padding: 4pc;
+    } */
 
-.portfolio-section {
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; */
+    .portfolio-box {
+        padding: 0 1pc 1pc 1pc;
+        margin: 2pc 0;
+  }
+
+  .portfolio-box h3 {
+    font-size: 1pc;
 }
+
+.portfolio-box h2 {
+    font-size: 3pc;
+}
+
+.portfolio-box p {
+    font-size: 0.7pc;
+}
+
+.portfolio-box button {
+    font-size: 15px;
+}
+ }
+
+ .portfolio-section {
+        padding: 4pc;
+    }
 
 .portfolio-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-image: url('../media/images/blueliquid2.jpg') 30 / 19px round;
+    border: solid var(--primaryColor) 2px;
 }
+
+.portfolio-box button {
+    color: var(--primaryColor);
+    background: none;
+    border: none;
+    font-weight: bold;
+    padding: 0;
+}
+
+.portfolio-box:hover {
+        transition: 1.5s;
+        box-shadow: inset 80pc 0 0 0 var(--primaryColor);
+    }
 
 .portfolio-box p {
-    
 }
 
-.portfolio-left {
+.portfolio-box h3 {
+    padding: 0;
+}
+
+.port-box-left {
     width: 50%;
 }
 
-.portfolio-left h3 {
-    font-size: 4pc;
+.port-box-right {
+    width: 30%;
+    text-align: center;
 }
-
-.portfolio-right {
-    width: 50%;
-}
-
-.portfolio-right h2 {
-    font-size: 2pc;
-}
-

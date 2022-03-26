@@ -130,8 +130,17 @@ const goToWebDev = () => {
   }, 4500)
 }
 
-
-
+const goToMarketing = () => {
+  PageSwitchAnimation()
+  setTimeout(() => {
+    underNav.classList.remove('hide')
+    document.getElementById('hamburger').classList.remove('hide')
+    document.getElementById('close').classList.add('hide')
+    document.querySelector('.icon').classList.remove('spin')
+    document.body.classList.remove('animate')
+    window.location.href="/marketing";
+  }, 4500)
+}
 
 loadnav()
 loadMenu()

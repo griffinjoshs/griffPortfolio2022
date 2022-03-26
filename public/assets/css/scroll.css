@@ -1,0 +1,54 @@
+@media screen and (max-width: 900px) {
+  .scroll-btn {
+      display: none;
+  }
+}
+
+/* .scroll-btn {
+  left: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 20;
+    animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  } */
+  
+  #scrollDownToAbout {
+    left: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 20;
+    animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+    position: absolute;
+    bottom: 0;
+    margin: 12pc 8pc 1pc 10pc 
+  }
+  
+  #scrollDownToBlack {  
+    left: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 20;
+    animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+    position: absolute;
+    bottom: -50pc;
+  margin: 2pc 10pc 2pc 10pc;
+  }
+  

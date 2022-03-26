@@ -23,7 +23,7 @@
   font-size: 30px;
 }
 
- .card-container .card {
+ .card-container .service-card {
     position: relative;
     width: 300px;
     height: 400px;
@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 
- .card-container .card .face {
+ .card-container .service-card .face {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -45,21 +45,28 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+
 }
- .card-container .card .face.face1 {
+ .card-container .service-card .face.face1 {
     box-sizing: border-box;
     padding: 20px;
+    background: black;
 }
- .card-container .card .face.face1 h2 {
+ .card-container .service-card .face.face1 h2 {
     margin: 0;
     padding: 0;
 }
 
- .card-container .card .face.face2 {
+ .card-container .service-card .face.face2 {
     transition: 0.5s;
-    
+    background: url('../media/images/blueliquid2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid white 1px;
 }
- .card-container .card .face.face2 h2 {
+ .card-container .service-card .face.face2 h2 {
     margin: 0;
     padding: 0;
     font-size: 10em;
@@ -70,23 +77,23 @@
     /* flex-direction: column; */
 }
 
-.card-container .card:hover {
+.card-container .service-card:hover {
     box-shadow: 0 15px 60px rgba(128,128,128,0.96);;
 }
 
- .card-container .card:hover .face.face2 {
+ .card-container .service-card:hover .face.face2 {
     height: 60px;
     flex-direction: row;
 }
- .card-container .card:hover .face.face2 h2 {
+ .card-container .service-card:hover .face.face2 h2 {
     font-size: 2em;
 }
 
-.card-container .card:hover .face.face2 h3 {
+.card-container .service-card:hover .face.face2 h3 {
   font-size: 20px;
   padding: 0 5px 0 5px;
 }
- .card-container .card .face.face2 {
+ .card-container .service-card .face.face2 {
     flex-direction: column;
     border-radius: 15px;
 }
@@ -99,7 +106,7 @@
     border-radius: 15px;
 } */
 
-.card button {
+.service-card:hover button {
     background: transparent;
     border: none;
     color: var(--textColor);

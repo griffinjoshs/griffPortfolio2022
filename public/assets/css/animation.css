@@ -373,7 +373,7 @@
 @keyframes colorSlide {
   25% {
     --initialBgColor: blue;
-    --slideBgColor: #21aad8;
+    --slideBgColor: #5e76f6;
     background: linear-gradient(
       90deg,
       var(--initialBgColor) 0%,
@@ -389,7 +389,7 @@
     background-position: -100% 200%;
   }
   75% {
-    --initialBgColor: #21aad8;
+    --initialBgColor: #5e76f6;
     --slideBgColor: #ff3794;
     background: linear-gradient(
       90deg,

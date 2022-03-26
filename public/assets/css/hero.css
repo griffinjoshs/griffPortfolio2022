@@ -5,33 +5,101 @@
     }
   
     .hero-section h2 {
-      font-size: 95px;
+      font-size: 70px;
       padding: 1pc 0 0.5pc 0;
+      white-space: nowrap; /* Keeps the content on a single line */
     }
   
     .hero-section h4 {
       font-size: 30px;
-      margin: 0;
       padding-bottom: 1pc;
+    }
+    .hero-section h5 {
+      font-size: 20px;
     }
   
     .hero-left {
       padding: 0 2px 0 2pc;
     }
   }
+
+  /* image */
+  @media screen and (max-width: 815px) {
+    .hero-section {
+      /* justify-content: space-evenly; */
+      padding: 2pc 0 4pc 0;
+    }
+
+    .hero-left {
+      justify-content: space-evenly;
+      text-align: center;
+      width: 100%;
+    }
+
+    .hero-section h2 {
+      flex-wrap: wrap;
+    }
+
+    .hero-right {
+      display: none;
+    }
+
+    .hero-button-sec {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 815px) {
+    .hero-section {
+      justify-content: space-evenly;
+      padding: 2pc 1pc 4pc 1pc;
+    }
+
+    .hero-left {
+      padding-left: 6pc;
+      width: 60%;
+      justify-content: center;
+    }
+
+    .hero-section h2,
+    h4, h5
+    button {
+      padding-left: 1.5pc;
+    }
+
+    .hero-section h5 {
+      padding: 3pc 0 3pc 0;
+      text-align: right;
+    }
+
+    .hero-button-sec {
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1pc;
+      width: 80%;
+      flex-direction: row-reverse;
+    }
+  }
+
   
   @media screen and (min-width: 900px) and (max-width: 1200px) {
     .hero-section h2 {
-      font-size: 85px;
+      font-size: 60px;
       padding: 0;
+      white-space: nowrap; /* Keeps the content on a single line */
     }
   
     .hero-section h4 {
       padding-top: 3pc;
       font-size: 30px;
-      margin: 0;
     }
+
+    .hero-section h5 {
+      font-size: 20px;
   }
+}
   
   @media screen and (min-width: 500px) and (max-width: 1200px) {
   
@@ -39,8 +107,17 @@
   
   @media screen and (min-width: 500px) and (max-width: 1200px) {
     .hero-section h2 {
-      font-size: 60px;
+      font-size: 45px;
+      white-space: nowrap; /* Keeps the content on a single line */
     }
+
+    .hero-section h4 {
+      font-size: 20px;
+  }
+
+    .hero-section h5 {
+      font-size: 15px;
+  }
   }
   
   @media screen and (min-width: 500px) and (max-width: 800px) {
@@ -51,18 +128,9 @@
     .hero-section {
       text-align: left;
     }
-  
-    .hero-right {
-      display: none;
-    }
   }
   
-  @media screen and (max-width: 500px) {
-    .hero-section {
-      padding: 4pc 0 4pc 0;
-      text-align: left;
-    }
-  
+  @media screen and (max-width: 500px) {  
     .hero-section h2 {
       font-size: 45px;
     }
@@ -70,36 +138,41 @@
     .hero-section h4 {
       font-size: 25px;
     }
-  
-    .hero-right {
-      display: none;
-    }
+    .hero-section h5 {
+      font-size: 15px;
+      padding: 20px;
+  }
   }
 
 .hero-section {
     display: flex;
-    justify-content: center;
-    height: 80vh;
-    /* padding: 6pc 5pc 0 5pc; */
+    height: 70vh;
     /* z-index: 2; */
-    border-radius: 0 6pc 6pc 0;
     position: relative;
     overflow: hidden;
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6);
   }
   
   .hero-section a {
     color: var(--primaryColor);
   }
   
-  .hero-section h2,
-  h4 {
+  .hero-section h2, h4, h5 {
     text-transform: uppercase;
     font-family: "Ubuntu", sans-serif;
+    padding-bottom: 1pc;
   }
   
   .hero-section h2,
-  h4,
+  h4, h5
   button {
+    margin: 0;
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6);
+  }
+
+  .hero-section h5 {
     margin: 0;
   }
   
@@ -109,24 +182,25 @@
     color: var(--textColor);
     line-height: 1.5;
     cursor: pointer;
-    padding: 1pc 0 1pc 0;
+    padding: 1pc 0 1pc 1.5pc;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* border-right: .15em solid transparent;  */
+    /* The typwriter cursor */
     letter-spacing: .15em; /* Adjust as needed */
     z-index: 20;
     animation: 
-      typing 1.5s steps(30, end),
-      blink-caret 2s step-end;
+      typing 1.5s steps(30, end)
+      /* blink-caret 2s step-end */
+      ; 
   }
   
   .hero-section h2:hover {
-    color: var(--secondaryColor);
+    text-decoration: underline;
   }
   
   .hero-section h4 {
-    color: var(--primaryColor);
+    color: var(--textColor);
+    /* padding: 0; */
   }
   
   .hero-section h4 span {
@@ -136,21 +210,29 @@
   .hero-left {
     display: flex;
     flex-direction: column;
+    z-index: 100;
+    flex-shrink: 1;
   }
   
   .hero-right {
-    width: 35%;
+    width: 40%;
+    background: transparent;
+    z-index: 0;
   }
-  /* .slide-0, .slide-1 {
-    
-  } */
+  
+  .hero-right img {
+    padding: 1pc 0;
+    background: transparent;
+    z-index: 0;
+  }
   
   .slide {
     display: inline;
   }
-  
+
   .hero-button-sec {
-    text-align: right;
+    display: flex;
+    padding-left: 1pc;
   }
   
   .hero-button-sec p {
@@ -160,9 +242,9 @@
   .hero-button-sec button {
     margin: 0 10px 0 10px;
     padding: 18px 40px;
-    color: var(--primaryColor);
+    color: var(--textColor);
     background: transparent;
-    border: solid var(--primaryColor) 1px;
+    border: solid var(--textColor) 1px;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
@@ -171,32 +253,10 @@
   
   .hero-button-sec button:hover {
     transition: 1s;
-    border: solid var(--primaryColor);
+    border: solid var(--textColor);
     color: var(--background);
-    box-shadow: inset 10.5em 0 0 0 var(--primaryColor);
+    box-shadow: inset 10.5em 0 0 0 var(--textColor);
+    text-shadow: none;
   }
   
-  .scroll-btn {
-    position: absolute;
-    left: 0;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-weight: bold;
-    font-size: 15px;
-    animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  }
-  
-  #scrollDownToColors {
-    bottom: 0;
-    margin: 8pc 10pc 8pc 10pc;  
-  }
-  
-  #scrollDownToBlack {
-  margin: 2pc 10pc 2pc 10pc;
-  bottom: 5;
-  }
   

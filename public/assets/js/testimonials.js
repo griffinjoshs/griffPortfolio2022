@@ -34,7 +34,7 @@ const loadTestimonials = () => {
   Testimonials.map((testimonial, i) => {
     testimonialSection.innerHTML += `<div class="testimonial-box">
     <div class="name-area">
-      <div class="circle-img" style="background: 'url(${testimonial.image})'"></div>
+      <div class="circle-img" style="background: url(${testimonial.image})"></div>
       <h3>${testimonial.name}</h3>
     </div>
     <div class="text-area">

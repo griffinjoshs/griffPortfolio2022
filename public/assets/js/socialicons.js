@@ -1,37 +1,46 @@
 const socialContent = [
-    {
-        platform: 'LinkedIn',
-        icon: '<i class="fa-brands fa-linkedin-in"></i>',
-        link: '/' 
-    },
-    {
-        platform: 'LinkedIn',
-        icon: '<i class="fa-brands fa-linkedin-in"></i>',
-        link: '/' 
-    }
-]
-const socialsSection = document.getElementById('socialIcons')
+  {
+    platform: "LinkedIn",
+    icon: '<i class="fa-brands fa-linkedin-in"></i>',
+    link: "https://www.linkedin.com/in/griffin-surett-44a13b16a/",
+  },
+  {
+    platform: "Instagram",
+    icon: '<ion-icon name="logo-instagram"></ion-icon>',
+    link: "https://www.instagram.com/griffinswebservices/",
+  },
+  {
+    platform: "Github",
+    icon: '<ion-icon name="logo-github"></ion-icon>',
+    link: "https://github.com/griffinjoshs",
+  },
+];
+const socialsSections = document.getElementsByClassName("social-icons");
 
 const socialMediaIcons = () => {
-    socialsSection.innerHTML = ''
-    socialContent.map(
-      (socialIcon) =>
-        (socialsSection.innerHTML += `
-        <div id='border'>
-        <div class="social-icon" onmouseover='spinBorder()' onmouseout='stopSpin()'>
+  const icons = socialContent.map(
+    (socialIcon) =>`
+         <li>
+        <a href=${socialIcon.link}>
         ${socialIcon.icon}
-        </div>
-        </div>`
-))}
+        </a>
+        </li>`
+  );
 
-const circleBorder = document.getElementById('border')
-
-const spinBorder = () => {
-    circleBorder.classList.add('rotate')
+  for(let i = 0; i < socialsSections.length; i++) {
+      icons.forEach(icon => {
+        socialsSections[i].innerHTML += icon
+      })
+  };
 }
+const circleBorder = document.getElementById("border");
 
-const stopSpin = () => {
-    circleBorder.classList.remove('rotate')
-}
+// const spinBorder = () => {
+//     circleBorder.classList.add('rotate')
+// }
 
-socialMediaIcons()
+// const stopSpin = () => {
+//     circleBorder.classList.remove('rotate')
+// }
+
+socialMediaIcons();

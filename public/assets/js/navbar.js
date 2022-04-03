@@ -10,7 +10,7 @@ const underNav = document.getElementById('underNav')
 
 const loadnav = () => {
      navbar.innerHTML += `<div class="navbar-left" onclick='backHome()'>
-    <div class="shape-logo">
+    <div class="shape-logo bounce-in-top">
       <div class="circle">
         <div class="square">
           <div class="diamond"></div>
@@ -39,6 +39,7 @@ const loadMenu = () => {
   `<ul>
     <li onclick='backHome()'>Home</li>
     <li onclick='goToContact()'>Contact</li>
+    <li onclick='goToHire()'>Hire Me</li>
     <li onclick='goToServices()'>Services</li>
   </ul>`
 }
@@ -103,6 +104,18 @@ const goToContact = () => {
     document.querySelector('.icon').classList.remove('spin')
     document.body.classList.remove('animate')
     window.location.href="/contact";
+  }, 4500)
+}
+
+const goToHire = () => {
+  PageSwitchAnimation()
+  setTimeout(() => {
+    underNav.classList.remove('hide')
+    document.getElementById('hamburger').classList.remove('hide')
+    document.getElementById('close').classList.add('hide')
+    document.querySelector('.icon').classList.remove('spin')
+    document.body.classList.remove('animate')
+    window.location.href="/hire";
   }, 4500)
 }
 

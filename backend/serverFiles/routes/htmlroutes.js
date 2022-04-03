@@ -22,4 +22,8 @@ module.exports = function (app) {
     app.get("/marketing", function (req, res) {
         res.sendFile(path.join(__dirname, "../../../public/digitalmarketing.html"));
     });
+      // CREATE Hire HTML
+      app.get("/hire", function (req, res) {
+        res.sendFile(path.join(__dirname, "../../../public/hire.html"));
+    });
 };

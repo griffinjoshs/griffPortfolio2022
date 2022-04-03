@@ -1,7 +1,10 @@
  @media screen and (min-width: 700px) {
     .portfolio-section {
         padding: 4pc;
-        min-height: 130vh;
+    }
+
+    .portfolio-boxes {
+                min-height: 130vh;
     }
 
     .portfolio-box {
@@ -71,6 +74,7 @@
     align-items: center;
     border-image: url('../media/images/blueliquid2.jpg') 30 / 19px round;
     border: solid var(--primaryColor) 2px;
+    cursor: pointer;
 }
 
 .portfolio-box button {
@@ -81,9 +85,13 @@
     padding: 0;
 }
 
+.portfolio-box button:hover {
+    text-decoration: underline;
+}
+
 .portfolio-box:hover {
-        transition: 1.5s;
-        box-shadow: inset 80pc 0 0 0 var(--primaryColor);
+    animation: colorSlide 5s;
+    background: var(--primaryColor);
     }
 
 .portfolio-box p {
@@ -100,4 +108,8 @@
 .port-box-right {
     width: 30%;
     text-align: center;
+}
+
+.portfolio-box:hover button {
+    color: white;
 }

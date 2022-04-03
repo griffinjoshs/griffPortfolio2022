@@ -16,9 +16,8 @@ app.use(express.static(__dirname + '../../public'));
     res.sendFile("/index.html");
 });
 
-// require("./server/routes/submitForm.routes")(app)
-// require("./server/routes/nodeMailerRoutes")(app)
 require("./serverFiles/routes/htmlroutes")(app)
+require('./serverFiles/routes/subscribe.routes')(app)
 
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://localhost/griffinsurettDb", {

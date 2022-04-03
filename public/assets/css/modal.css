@@ -1,0 +1,55 @@
+#modal {
+    position: absolute;
+    bottom: -4500px; 
+    right: 30%; 
+    transform: translate(0, -50%);
+   z-index: 50;
+   background-color: black;
+    width: 30pc;
+   height: 25pc;
+   box-shadow: 0px 4px 26px 4px var(--textColor);
+   border-radius: 10%;
+}
+
+.modal-form-sec {
+ display: flex;
+ justify-content: center;
+ align-items: center;                       
+   background-color: black;
+}
+
+#modal p {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: solid white 2px;
+    margin: 15px;
+    border-radius: 60%;
+}
+
+.modal-form {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-form button {
+    background: transparent;
+    border: solid var(--textColor) 1px;
+    color: var(--textColor);
+    height: 2.3pc;
+    width: 6pc;
+    align-self: center;
+}
+
+.modal-form button:hover {
+    transition: 1s;
+    border: solid var(--textColor);
+    color: var(--background);
+    box-shadow: inset 10.5em 0 0 0 var(--textColor);
+}

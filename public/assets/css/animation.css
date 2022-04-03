@@ -247,6 +247,14 @@
     opacity: 0;
   }
 }
+
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
 @keyframes swirl-out-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -390,7 +398,7 @@
   }
   75% {
     --initialBgColor: #5e76f6;
-    --slideBgColor: #ff3794;
+    --slideBgColor: blue;
     background: linear-gradient(
       90deg,
       var(--initialBgColor) 0%,

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://kit.fontawesome.com/737cd2d755.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/851dcf7ec4.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Griffin Surett</title>
+    <link rel="icon" type="image/x-icon" href="./assets/media/images/Griffin-logo.png">
+    <title>Griffin Surett || My name is Griffin Surett || I am a Web Developer and a Digital Marketer for hire</title>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -14,10 +15,14 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/preloader.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
     <link rel="stylesheet" href="./assets/css/shapes.css" />
     <link rel="stylesheet" href="./assets/css/scroll.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/hero.css" />
     <link rel="stylesheet" href="./assets/css/colorSec.css" />
@@ -28,7 +33,16 @@
   </head>
 
   <body>
-    <!-- <div id="wholeWebsite"> -->
+    <div id="pre-load">
+      <div class="shape-logo">
+        <div class="circle rotate">
+          <div class="square rotate">
+            <div class="diamond rotate"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="website">
     <nav id="navbar"></nav>
     <div id="menu" class="hide"></div>
     <div class="big-shape-logo">
@@ -42,9 +56,8 @@
       <!-- menupage -->
       <!-- navbar -->
       <div class="shapes"></div>
-      <!-- <div id="animation"></div> -->
       <!-- start hero -->
-      <section class="hero-section" onscroll="scrollDownToAbout()">
+      <section class="hero-section snap" onscroll="scrollDownToAbout()">
         <!-- <img src='./assets/media/images/blob-gradientblue.png' class="blob header-blob lightBlue" id="header-lightblue" height="300" width="300"> -->
         <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob header-blob blue" id="header-blue1" height="250" width="250"> -->
         <!-- <img src='./assets/media/images/blob-neon-blue.png' class="blob header-blob pink" id="header-blue2" height="250" width="250"> -->
@@ -64,7 +77,7 @@
           Scroll
         </button>
       </section>
-      <section class="about-section" id="about">
+      <section class="about-section snap" id="about">
         <h2 class="section-header">About Me</h2>
         <div class="about-content">
           <div class="about-left">
@@ -74,12 +87,12 @@
           </div>
           <div class="about-right">
             <h3>My Story</h3>
-            <p>My name is Griffin, as a child of the digital age I am very sound in all things online. I am a 22 year old college student from New Jersey that specializes in Web Development as well as digital marketing. I have over 3 years of building web sites and running various different digital campaigns. However, things took a big turn when I learned how to code over the course of the long and drawn out Covid period. I am now well versed in HTML, CSS, and JavaScript as well as different libraries and frameworks.</p>
+            <p>My name is Griffin, as a child of the digital age I am very sound in all things online. I am a 22 year old college student from New Jersey that specializes in Web Development as well as digital marketing. I have over 3 years of building web sites, logo-designing and running various different digital campaigns. However, things took a big turn when I learned how to code over the course of the long and drawn out Covid period. I am now well versed in HTML, CSS, and JavaScript as well as different libraries and frameworks.</p>
           <br>
           <button>Hire Me</button>
           <br>
-            <div class="social-icons" id="socialIcons"></div>
-          </div>
+          <ul class="social-icons" id="footer-socials"></ul>
+        </div>
         </div>
         <button
           class="scroll-btn"
@@ -97,8 +110,9 @@
       </section>
       <section class="portfolio-section">
         <h2 class="section-header">My Projects</h2>
-        <div class="portfolio-boxes" onmouseover="slideArrow()">
+        <div class="portfolio-boxes">
           </div>
+          <!-- <div>hi</div> -->
       </section>
       <section class="color-section" id="colors">
         <div class="color-content">
@@ -106,19 +120,62 @@
           <div class="testimonial-section"></div>
         </div>
       </section>
+      <div class="hide" id="modal">
+        <p onclick="hideModal()">X</p>
+        <div class="modal-form-sec">
+        <form class="modal-form" id="modal-form">
+          <input type="email" class="input modal-input" id="modal-email" name="email" placeholder="Email Address">
+          <input type="text" class="input modal-input" name="firstName" placeholder="First Name">
+          <input type="text" class="input modal-input" name="lastName" placeholder="Last Name">
+          <button type="submit" id="submit-footer-form">Submit</button>
+        </form>
+      </div>
+      </div>
       <footer>
-        <div class="footer-line"></div>
-        <h2>© 2022 Griffins Web Services.</h2>
+        <div class="footer-section">
+          <ul class="footer-menu" id="menu1">
+            <h3>Services</h3>
+            <li class="text" onclick="goToWebDev()">Web Development</li>
+            <li class="text" onclick="goToMarketing()">Marketing</li>
+          </ul>
+          <div class="footer-menu">
+            <h3>My Socials</h3>
+            <ul class="social-icons" id="footer-socials"></ul>
+          </div>
+          <ul class="footer-menu">
+            <h3>Inquire</h3>
+                <li class="text" onclick="goToContact()">
+                Contact Me
+              </li>
+              <li class="text" onclick="goToHire()">
+              Hire Me
+            </li>
+          </ul>
+          <div class="footer-menu">
+            <h3>Subscribe</h3>
+            <div id="footer-form">
+              <input type="email" class="input footer-input" placeholder="email address" id="userEmail">
+              <button type="button" onclick="showModal()">Subscribe</button>
+          </div>
+        </div>
+      </div>
+        <div class="footer-bottom">
+          <div class="footer-line"></div>
+          <h2>© 2022 Griffins Web Services.</h2>
+        </div>
       </footer>
       <!-- end hero -->
     </div>
-    <!-- </div> -->
+    </div>
     <!-- Creative Designed By 30000001537 From <a href="https://lovepik.com/image-400682323/liquid-fluid-background.html">LovePik.com</a> -->
   </body>
   <script src="./assets/js/hero.js"></script>
+  <script src="./assets/js/modal.js"></script>
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/homeCard.js"></script>
   <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/api.js"></script>
+  <script src="./assets/js/preloader.js"></script>
   <script src="./assets/js/about.js"></script>
   <script src="./assets/js/socialicons.js"></script>
   <script src="./assets/js/portfolio.js"></script>

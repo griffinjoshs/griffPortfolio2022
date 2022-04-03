@@ -51,7 +51,6 @@
 .shape-logo {
   text-align: center;
   padding-right: 10px;
-  animation: bounce-in-top 1.1s both;
   background: none;
   filter: drop-shadow(0 0 75px var(--blurColor));
   text-shadow: 0 0 5px var(--blurColor), 0 0 10px var(--blurColor), 0 0 15px var(--blurColor),

@@ -38,6 +38,7 @@
 
     .hero-section h2 {
       flex-wrap: wrap;
+      padding: 30pc;
     }
 
     .hero-right {
@@ -162,18 +163,24 @@
     text-transform: uppercase;
     font-family: "Ubuntu", sans-serif;
     padding-bottom: 1pc;
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6);
   }
   
   .hero-section h2,
   h4, h5
   button {
     margin: 0;
-    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-    filter: drop-shadow(55px -2px 30px #5e76f6);
   }
 
   .hero-section h5 {
     margin: 0;
+    cursor: pointer;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+
+  .hero-section h5:hover {
+    text-decoration: underline;
   }
   
   .hero-section h2 {
@@ -200,7 +207,7 @@
   
   .hero-section h4 {
     color: var(--textColor);
-    /* padding: 0; */
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
   
   .hero-section h4 span {
@@ -224,6 +231,7 @@
     padding: 1pc 0;
     background: transparent;
     z-index: 0;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
   
   .slide {
@@ -249,6 +257,7 @@
     font-size: 15px;
     font-weight: bold;
     z-index: 20;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
   
   .hero-button-sec button:hover {
